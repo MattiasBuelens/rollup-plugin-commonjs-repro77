@@ -1,0 +1,18 @@
+{
+  "name": "rollup-plugin-commonjs-repro77",
+  "version": "1.0.0",
+  "description": "Reproduction case for rollup-plugin-commonjs issue #77",
+  "author": "Mattias Buelens",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "build:vendor": "browserify -s vendor -o vendor/dist/index.js vendor/src/index.js",
+    "build:dist": "rollup -c -o dist/index.js",
+    "build": "npm run build:vendor && npm run build:dist"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.1",
+    "rollup": "^0.33.0",
+    "rollup-plugin-commonjs": "^3.1.0"
+  }
+}
