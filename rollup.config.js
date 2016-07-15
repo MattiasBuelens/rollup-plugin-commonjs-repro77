@@ -7,6 +7,11 @@ module.exports = {
     plugins: [
         commonjs({
             include: 'vendor/**'
-        })
+        }),
+        {
+            intro: function() {
+                return 'var require;';
+            }
+        }
     ]
 };

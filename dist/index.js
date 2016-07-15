@@ -1,6 +1,7 @@
 (function (exports) {
 	'use strict';
 
+	var require;
 	var commonjsGlobal = typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {}
 
 	function createCommonjsModule(fn, module) {
